@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #f0f4fa;
+    --bg-secondary: #e8eef7;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --glass-bg: rgba(255, 255, 255, 0.72);
+    --glass-border: rgba(15, 23, 42, 0.08);
+    --glass-hover-bg: rgba(255, 255, 255, 0.85);
+    --glass-hover-border: rgba(37, 99, 235, 0.18);
+    --glass-hover-shadow: 0 8px 32px rgba(37, 99, 235, 0.1);
+    --glass-badge-bg: rgba(255, 255, 255, 0.9);
+    --glass-badge-border: rgba(15, 23, 42, 0.07);
+    --glass-input-bg: rgba(255, 255, 255, 0.8);
+    --glass-input-text: #0f172a;
+    --glass-input-placeholder: #94a3b8;
+    --grid-line: rgba(37, 99, 235, 0.07);
+    --orb-1: rgba(37, 99, 235, 0.14);
+    --orb-2: rgba(59, 130, 246, 0.1);
+    --orb-3: rgba(14, 165, 233, 0.08);
+    --gradient-accent: linear-gradient(to bottom right, rgba(37, 99, 235, 0.1), var(--bg-primary), rgba(148, 163, 184, 0.12));
+    --gradient-accent-home: linear-gradient(to bottom right, rgba(37, 99, 235, 0.12), var(--bg-primary), rgba(148, 163, 184, 0.15));
+    --line-accent: rgba(37, 99, 235, 0.2);
+    --footer-border: rgba(15, 23, 42, 0.08);
+    --nav-divider: rgba(15, 23, 42, 0.1);
+    --timeline-dot-bg: rgba(241, 245, 249, 0.95);
+    --project-overlay: linear-gradient(to top, rgba(240, 244, 250, 0.85), transparent);
+    --icon-hover-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+    --btn-hover-shadow: 0 6px 24px rgba(37, 99, 235, 0.12);
+  }
+
+  .dark {
+    --bg-primary: #0a0f1a;
+    --bg-secondary: #0d1424;
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+    --glass-bg: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-hover-bg: rgba(255, 255, 255, 0.07);
+    --glass-hover-border: rgba(255, 255, 255, 0.14);
+    --glass-hover-shadow: 0 8px 32px rgba(37, 99, 235, 0.1);
+    --glass-badge-bg: rgba(255, 255, 255, 0.06);
+    --glass-badge-border: rgba(255, 255, 255, 0.08);
+    --glass-input-bg: rgba(255, 255, 255, 0.04);
+    --glass-input-text: #f4f4f5;
+    --glass-input-placeholder: #71717a;
+    --grid-line: rgba(37, 99, 235, 0.05);
+    --orb-1: rgba(29, 78, 216, 0.12);
+    --orb-2: rgba(37, 99, 235, 0.08);
+    --orb-3: rgba(14, 165, 233, 0.06);
+    --gradient-accent: linear-gradient(to bottom right, rgba(30, 58, 138, 0.25), var(--bg-primary), rgba(15, 23, 42, 0.4));
+    --gradient-accent-home: linear-gradient(to bottom right, rgba(30, 58, 138, 0.3), var(--bg-primary), rgba(15, 23, 42, 0.4));
+    --line-accent: rgba(96, 165, 250, 0.2);
+    --footer-border: rgba(255, 255, 255, 0.06);
+    --nav-divider: rgba(255, 255, 255, 0.08);
+    --timeline-dot-bg: rgba(10, 15, 26, 0.9);
+    --project-overlay: linear-gradient(to top, rgba(10, 15, 26, 0.65), transparent);
+    --icon-hover-glow: 0 0 20px rgba(37, 99, 235, 0.18);
+    --btn-hover-shadow: 0 6px 24px rgba(37, 99, 235, 0.12);
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    @apply antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply relative z-10 mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20;
+  }
+
+  .page-container-hero {
+    @apply relative z-10 mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:px-8 lg:pb-24 lg:pt-16;
+  }
+
+  .text-themed {
+    color: var(--text-primary);
+  }
+
+  .text-themed-muted {
+    color: var(--text-secondary);
+  }
+
+  .text-themed-subtle {
+    color: var(--text-muted);
+  }
+
+  .page-title {
+    @apply text-3xl font-bold tracking-tight sm:text-4xl;
+    color: var(--text-primary);
+  }
+
+  .section-title {
+    @apply text-xl font-semibold sm:text-2xl;
+    color: var(--text-primary);
+  }
+
+  .page-subtitle {
+    @apply mt-3 max-w-2xl text-sm leading-relaxed sm:text-base;
+    color: var(--text-secondary);
+  }
+
+  .bg-themed {
+    background-color: var(--bg-primary);
+  }
+
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .glass-panel {
+    @apply glass;
+  }
+
+  .glass-panel-hover:hover {
+    transform: translateY(-4px);
+    background: var(--glass-hover-bg);
+    border-color: var(--glass-hover-border);
+    box-shadow: var(--glass-hover-shadow);
+  }
+
+  .glass-card {
+    @apply glass-panel glass-panel-hover;
+  }
+
+  .glass-card-compact {
+    @apply glass-panel glass-panel-hover rounded-2xl;
+  }
+
+  .glass-btn {
+    @apply glass inline-flex items-center justify-center rounded-[20px] px-5 py-2.5 text-sm font-medium;
+    color: var(--text-primary);
+  }
+
+  .glass-btn:hover {
+    transform: translateY(-2px);
+    background: var(--glass-hover-bg);
+    border-color: var(--glass-hover-border);
+    box-shadow: var(--btn-hover-shadow);
+  }
+
+  .glass-btn-primary {
+    @apply glass-btn bg-blue-600/70 text-white hover:bg-blue-600/85;
+  }
+
+  .glass-btn-primary:hover {
+    color: #fff;
+  }
+
+  .glass-icon-btn {
+    @apply glass flex h-10 w-10 items-center justify-center rounded-full;
+    color: var(--text-secondary);
+  }
+
+  .glass-icon-btn:hover {
+    transform: scale(1.08);
+    color: var(--text-primary);
+    border-color: rgba(59, 130, 246, 0.35);
+    box-shadow: var(--icon-hover-glow);
+  }
+
+  .glass-input {
+    @apply w-full rounded-xl px-3.5 py-2.5 text-sm transition-all duration-300 focus:outline-none;
+    background: var(--glass-input-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    color: var(--glass-input-text);
+  }
+
+  .glass-input::placeholder {
+    color: var(--glass-input-placeholder);
+  }
+
+  .glass-input:focus {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+
+  .glass-input option {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  .glass-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+    background: var(--glass-badge-bg);
+    border: 1px solid var(--glass-badge-border);
+    color: var(--text-secondary);
+  }
+
+  .glass-nav {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+  }
+
+  .status-dot {
+    @apply relative inline-block h-2 w-2 rounded-full bg-emerald-400;
+    box-shadow: 0 0 8px rgba(52, 211, 153, 0.6);
+    animation: status-pulse 2s ease-in-out infinite;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 bg-clip-text text-transparent;
+  }
+
+  .dark .gradient-text {
+    @apply from-blue-500 via-blue-400 to-sky-400;
+  }
+
+  .home-grid-bg {
+    background-image:
+      linear-gradient(var(--grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 20%, transparent 75%);
+  }
+
+  .timeline-line {
+    @apply absolute left-0 top-0 h-full w-px;
+    background: linear-gradient(to bottom, rgba(37, 99, 235, 0.4), rgba(59, 130, 246, 0.1));
+  }
+
+  .timeline-dot {
+    @apply absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-blue-500;
+    background: var(--timeline-dot-bg);
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+  }
+
+  .project-image-overlay {
+    background: var(--project-overlay);
+  }
+
+  .themed-gradient-bg {
+    background: var(--gradient-accent);
+  }
+
+  .themed-gradient-bg-home {
+    background: var(--gradient-accent-home);
+  }
+}
+
+@keyframes status-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.85);
+  }
+}
+
+@keyframes download-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-download {
+  animation: download-bounce 2s ease-in-out infinite;
+}
