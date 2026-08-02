@@ -65,7 +65,7 @@ export default function HackathonCard({ hackathon, onOpenDetails, onOpenMedia })
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.35 }}
-      className="glass-panel group relative flex flex-col h-full overflow-hidden rounded-[22px] border border-slate-700/30 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 bg-themed/90"
+      className="glass-panel group relative flex flex-col overflow-hidden rounded-[22px] border border-slate-700/30 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 bg-themed/90"
     >
       {/* Cover Image Container (Fixed height: 195px with Smart non-cropped presentation) */}
       <div className="relative h-[195px] w-full overflow-hidden bg-slate-900/50">
@@ -106,13 +106,13 @@ export default function HackathonCard({ hackathon, onOpenDetails, onOpenMedia })
       <div className="flex flex-1 flex-col p-4 sm:p-4.5 space-y-3">
         {/* Title */}
         <div>
-          <h2 className="text-[24px] font-bold leading-tight tracking-tight text-themed group-hover:text-blue-500 transition-colors">
+          <h2 className="text-[24px] font-bold leading-tight tracking-tight text-themed group-hover:text-blue-500 transition-colors line-clamp-1">
             {title}
           </h2>
         </div>
 
-        {/* Full description without truncation */}
-        <p className="text-xs leading-relaxed text-themed-muted">
+        {/* 2-line short description */}
+        <p className="text-xs leading-relaxed text-themed-muted line-clamp-2 min-h-[32px]">
           {description}
         </p>
 

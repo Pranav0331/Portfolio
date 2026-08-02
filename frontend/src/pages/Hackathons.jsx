@@ -122,6 +122,38 @@ export default function Hackathons() {
           </div>
         </motion.div>
 
+        {/* Compact Search & Filter Toolbar */}
+        <motion.div {...fadeIn} className="glass-card p-3 sm:p-4 flex flex-col gap-2.5 sm:flex-row items-center justify-between">
+          <div className="relative w-full sm:max-w-md">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-themed-subtle pointer-events-none" />
+            <input
+              type="search"
+              placeholder="Search hackathons or tech..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              className="glass-input pl-9 text-xs py-2"
+              aria-label="Search hackathons"
+            />
+          </div>
+
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <Layers className="h-3.5 w-3.5 text-themed-subtle hidden sm:block" />
+            <select
+              value={techFilter}
+              onChange={(e) => setTechFilter(e.target.value)}
+              className="glass-input w-full sm:w-44 text-xs py-2"
+              aria-label="Filter by technology"
+            >
+              <option value="All">All Technologies</option>
+              {allTech.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+          </div>
+        </motion.div>
+
         {/* Responsive Grid: 3 per row on Desktop (lg), 2 on Tablet (md), 1 on Mobile */}
         <div className="space-y-4">
           <div className="flex items-center justify-between">

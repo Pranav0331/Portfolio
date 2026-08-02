@@ -15,36 +15,24 @@ export const internships = [
 
 export const certifications = [
   {
-    id: 'sql-basic',
     name: 'SQL (Basic)',
     issuer: 'HackerRank',
-    year: 'Dec 2025',
-    skills: ['SQL', 'Database Queries', 'Relational DB'],
-    certificateUrl: 'https://www.hackerrank.com/certificates/iframe/249aec9c0234',
+    year: '2025',
   },
   {
-    id: 'powerbi',
     name: 'PowerBI',
     issuer: 'CETPA',
-    year: 'Nov 2025',
-    skills: ['Data Visualization', 'Business Intelligence', 'Dashboards'],
-    certificateUrl: 'https://ik.imagekit.io/pranav31/Portfolio/certificate/PowerBI.pdf',
+    year: '2025',
   },
   {
-    id: 'python-data-analysis',
     name: 'Python for Data Analysis',
     issuer: 'Simplilearn',
-    year: 'Feb 2026',
-    skills: ['Python', 'Pandas', 'Data Analysis', 'NumPy'],
-    certificateUrl: 'https://simpli-web.app.link/e/2tkTt3nmg5b',
+    year: '2026',
   },
-  {
-    id: 'dsa',
+    {
     name: 'Data Structures and Algorithms',
     issuer: 'Simplilearn',
-    year: 'Feb 2026',
-    skills: ['Data Structures', 'Algorithms', 'Problem Solving'],
-    certificateUrl: 'https://simpli-web.app.link/e/lVPo1bmmg5b',
+    year: '2026',
   },
 ];
 
@@ -62,7 +50,7 @@ export const learningJourney = [
   {
     phase: 'Backend & Databases',
     period: '2025',
-    topics: ['Node.js', 'Express.js', 'MongoDB','Convex','Notion', 'REST APIs', 'Authentication'],
+    topics: ['Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Authentication'],
   },
   {
     phase: 'Production Skills',
