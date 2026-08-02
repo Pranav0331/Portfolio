@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import PageMeta from '../components/layout/seo/PageMeta';
+import CertificationCard from '../components/experience/CertificationCard';
 import {
   internships,
   certifications,
@@ -61,14 +62,21 @@ export default function Experience() {
         </motion.div>
 
         <motion.div {...fadeIn}>
-          <h2 className="section-title mb-4">Certifications</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {certifications.map((cert) => (
-              <article key={cert.name} className="glass-card p-5">
-                <h3 className="font-medium text-themed">{cert.name}</h3>
-                <p className="mt-1 text-sm text-themed-muted">{cert.issuer}</p>
-                <p className="mt-2 text-xs text-themed-subtle">{cert.year}</p>
-              </article>
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="section-title mb-0">Certifications</h2>
+            <span className="text-xs text-themed-subtle font-medium">
+              {certifications.length} Verified Credentials
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {certifications.map((cert, index) => (
+              <CertificationCard
+                key={cert.id || cert.name}
+                certification={cert}
+                certificate={cert}
+                index={index}
+              />
             ))}
           </div>
         </motion.div>
@@ -101,7 +109,7 @@ export default function Experience() {
           </div>
         </motion.div>
 
-        <motion.div {...fadeIn}>
+        {/* <motion.div {...fadeIn}>
           <h2 className="section-title mb-4">Achievements</h2>
           <ul className="glass-card space-y-3 p-6">
             {experienceAchievements.map((item) => (
@@ -114,7 +122,7 @@ export default function Experience() {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </motion.div> */}
       </section>
     </>
   );
