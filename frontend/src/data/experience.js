@@ -2,9 +2,10 @@ export const internships = [
   {
     role: 'Software Engineer Intern',
     company: 'MERAKEN',
-    period: 'JUN 2026',
+    period: 'JUN-JULY 2026',
     description:
       'Selected as a Software Engineer Intern at Meraken, contributing to software development projects while gaining hands-on experience in backend development, APIs, databases, and industry-standard engineering practices.',
+    certificateUrl: 'https://ik.imagekit.io/pranav31/Portfolio/Intern/Pranav_MTPL-SI26-PM482.pdf',
     highlights: [
       'Collaborated with senior developers on real-world software projects.',
       'Working on real-world software development projects',
@@ -50,14 +51,19 @@ export const certifications = [
 
 export const learningJourney = [
   {
-    phase: 'Foundations',
-    period: '2024',
-    topics: ['C','Python','JAVA', 'Data Structures', 'Discrete Mathematics'],
+    phase: "Industry Experience",
+    period: "2026",
+    topics: ["Software Engineering Internship", "Backend Development", "API Development", "Database Integration", "Real-World Projects"],
   },
   {
-    phase: 'Web Development',
-    period: '2025',
-    topics: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Git & GitHub'],
+    phase: "Production & System Building",
+    period: "2026",
+    topics: ["Vercel", "Render", "MongoDB Atlas", "System Design", "AI-Powered Applications"],
+  },
+  {
+    phase: "Hackathons & Competitions",
+    period: "2025-2026",
+    topics: ["Smart India Hackathon", "HackBriven", "AI/ML Projects", "Team Collaboration", "Problem Solving"],
   },
   {
     phase: 'Backend & Databases',
@@ -65,9 +71,14 @@ export const learningJourney = [
     topics: ['Node.js', 'Express.js', 'MongoDB','Convex','Notion', 'REST APIs', 'Authentication'],
   },
   {
-    phase: 'Production Skills',
+    phase: 'Web Development',
     period: '2025',
-    topics: ['Deployment', 'Testing', 'CI/CD basics', 'System Design fundamentals'],
+    topics: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Git & GitHub'],
+  },
+  {
+    phase: 'Foundations',
+    period: '2024',
+    topics: ['C','Python','JAVA', 'Data Structures', 'Discrete Mathematics'],
   },
 ];
 

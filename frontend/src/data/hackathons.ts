@@ -52,106 +52,6 @@ export interface Hackathon {
 
 export const hackathons: Hackathon[] = [
   {
-    id: 'sih',
-    title: 'Smart India Hackathon (SIH)',
-    subtitle: 'AI-Powered Sentiment Analysis Platform',
-    period: 'September 2025 ',
-    location: 'ABES Engineering College',
-    badge: {
-      text: 'College Level Selection',
-      type: 'finalist',
-    },
-    // Replace with your Cloudinary image URL
-    coverImage:
-      'https://ik.imagekit.io/pranav31/Portfolio/SIH/IMG-20251111-WA0044.jpg.jpeg',
-    description:
-      'Developed an AI-powered sentiment analysis platform featuring CSV upload, real-time visualizations, and intelligent feedback insights.',
-    longDescription:
-      `Smart India Hackathon (SIH) is India's premier nationwide innovation challenge where students solve real-world problems proposed by government organizations and industries. Our team successfully cleared the initial screening rounds, presented our solution before the college evaluation panel, and secured selection at the college level to represent our institution in the Smart India Hackathon.`,
-    highlights: [
-      'Selected among Top 50 teams from 350+ participating teams in the college SIH screening.',
-      'Developed a web-based(prototype) sentiment analysis platform with CSV upload support',
-      'Generated pie charts, word clouds, and AI-powered summaries for comment analysis.',
-      'Automated bulk feedback processing for faster sentiment insights.',
-    ],
-    tech: ['React.js', 'TypeScript', 'Vite', 'HTML5', 'Tailwind CSS', 'JavaScript'],
-    gallery: [
-      {
-        id: 'sih-1',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/Screenshot%202026-08-01%20at%207.48.13%E2%80%AFPM.png',
-      },
-      {
-        id: 'sih-2',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/IMG-20251111-WA0044.jpg.jpeg',
-      },
-      {
-        id: 'sih-3',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/SIH%20certificate.pdf',
-      },
-    ],
-    certificate: {
-      url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/SIH%20certificate.pdf',
-      title: 'Smart India Hackathon Certificate of Excellence',
-    },
-  },
-  {
-    id: 'dron-pratibimb',
-    title: 'Dron-Pratibimb',
-    subtitle: 'AI-Powered Customer Support & Ticket Classification Platform',
-    period: 'April 2026',
-    location: 'Dronacharya Group of Institutions, Greater Noida, Uttar Pradesh (India)',
-    badge: {
-      text: 'Participated',
-      type: 'participant',
-    },
-    // Replace with your Cloudinary image URL
-    coverImage:
-      'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM%20(2).jpeg',
-    description:
-      'Built an AI-powered customer support platform for intelligent ticket classification and automated issue resolution.',
-    longDescription:
-      'Developed a modern AI-powered customer support platform that automates ticket classification and streamlines issue management. The application features a responsive dashboard, real-time chat interface, AI-assisted ticket categorization, and analytics to improve customer support efficiency and response time.',
-    highlights: [
-      'Developed an AI-powered ticket classification and customer support platform.',
-      'Built responsive chat, dashboard, and analytics interfaces using React.',
-      'Implemented intelligent issue categorization for faster support workflows.',
-      'Designed a modern UI with reusable components and responsive layouts.',
-    ],
-    tech: ['React.js','TypeScript','Tailwind CSS','JavaScript','Vite','HTML','CSS',],
-    gallery: [
-      {
-        id: 'drone-1',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.55%20PM%20(1).jpeg',
-      },
-      {
-        id: 'drone-2',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM.jpeg',
-
-      },
-      {
-        id: 'drone-3',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM%20(2).jpeg',
-      },
-      {
-        id: 'drone-4',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM%20(1).jpeg',
-      },
-      {
-        id: 'drone-5',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.57%20PM.jpeg',
-      },
-           {
-        id: 'drone-6',
-        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.55%20PM.jpeg?updatedAt=1785613967167',
-      },
-
-    ],
-    certificate: {
-      url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-08-01%20at%201.07.27%20AM%20(1).jpeg',
-      title: 'DronePratibimb Winner Certificate',
-    },
-  },
-  {
     id: 'cognitive-chaos',
     title: 'Cognitive Chaos',
     subtitle: 'AI-Native Multi-Tenant Enterprise Operating System',
@@ -224,4 +124,106 @@ export const hackathons: Hackathon[] = [
       title: 'Cognitive Chaos 1st Runner-Up Certificate',
     },
   },
+  {
+    id: 'dron-pratibimb',
+    title: 'Dron-Pratibimb',
+    subtitle: 'AI-Powered Customer Support & Ticket Classification Platform',
+    period: 'April 2026',
+    location: 'Dronacharya Group of Institutions, Greater Noida, Uttar Pradesh (India)',
+    badge: {
+      text: 'Participated',
+      type: 'participant',
+    },
+    // Replace with your Cloudinary image URL
+    coverImage:
+      'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM%20(2).jpeg',
+    description:
+      'Built an AI-powered customer support platform for intelligent ticket classification and automated issue resolution.',
+    longDescription:
+      'Developed a modern AI-powered customer support platform that automates ticket classification and streamlines issue management. The application features a responsive dashboard, real-time chat interface, AI-assisted ticket categorization, and analytics to improve customer support efficiency and response time.',
+    highlights: [
+      'Developed an AI-powered ticket classification and customer support platform.',
+      'Built responsive chat, dashboard, and analytics interfaces using React.',
+      'Implemented intelligent issue categorization for faster support workflows.',
+      'Designed a modern UI with reusable components and responsive layouts.',
+    ],
+    tech: ['React.js','TypeScript','Tailwind CSS','JavaScript','Vite','HTML','CSS',],
+    gallery: [
+      {
+        id: 'drone-1',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.55%20PM%20(1).jpeg',
+      },
+      {
+        id: 'drone-2',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM.jpeg',
+
+      },
+      {
+        id: 'drone-3',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM%20(2).jpeg',
+      },
+      {
+        id: 'drone-4',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.52%20PM%20(1).jpeg',
+      },
+      {
+        id: 'drone-5',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.57%20PM.jpeg',
+      },
+           {
+        id: 'drone-6',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-07-31%20at%201.06.55%20PM.jpeg?updatedAt=1785613967167',
+      },
+
+    ],
+    certificate: {
+      url: 'https://ik.imagekit.io/pranav31/Portfolio/DronePratibimb/WhatsApp%20Image%202026-08-01%20at%201.07.27%20AM%20(1).jpeg',
+      title: 'DronePratibimb Winner Certificate',
+    },
+  },
+  
+  {
+    id: 'sih',
+    title: 'Smart India Hackathon (SIH)',
+    subtitle: 'AI-Powered Sentiment Analysis Platform',
+    period: 'September 2025 ',
+    location: 'ABES Engineering College',
+    badge: {
+      text: 'College Level Selection',
+      type: 'finalist',
+    },
+    // Replace with your Cloudinary image URL
+    coverImage:
+      'https://ik.imagekit.io/pranav31/Portfolio/SIH/IMG-20251111-WA0044.jpg.jpeg',
+    description:
+      'Developed an AI-powered sentiment analysis platform featuring CSV upload, real-time visualizations, and intelligent feedback insights.',
+    longDescription:
+      `Smart India Hackathon (SIH) is India's premier nationwide innovation challenge where students solve real-world problems proposed by government organizations and industries. Our team successfully cleared the initial screening rounds, presented our solution before the college evaluation panel, and secured selection at the college level to represent our institution in the Smart India Hackathon.`,
+    highlights: [
+      'Selected among Top 50 teams from 350+ participating teams in the college SIH screening.',
+      'Developed a web-based(prototype) sentiment analysis platform with CSV upload support',
+      'Generated pie charts, word clouds, and AI-powered summaries for comment analysis.',
+      'Automated bulk feedback processing for faster sentiment insights.',
+    ],
+    tech: ['React.js', 'TypeScript', 'Vite', 'HTML5', 'Tailwind CSS', 'JavaScript'],
+    gallery: [
+      {
+        id: 'sih-1',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/Screenshot%202026-08-01%20at%207.48.13%E2%80%AFPM.png',
+      },
+      {
+        id: 'sih-2',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/IMG-20251111-WA0044.jpg.jpeg',
+      },
+      {
+        id: 'sih-3',
+        url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/SIH%20certificate.pdf',
+      },
+    ],
+    certificate: {
+      url: 'https://ik.imagekit.io/pranav31/Portfolio/SIH/SIH%20certificate.pdf',
+      title: 'Smart India Hackathon Certificate of Excellence',
+    },
+  },
+  
 ];
