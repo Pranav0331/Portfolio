@@ -46,7 +46,7 @@ const stats = [
 const socialLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com/pranavmathur36',
+    href: 'https://github.com/Pranav0331',
     icon: GitHubIcon,
   },
   {

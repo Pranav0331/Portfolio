@@ -8,7 +8,7 @@ import {
 const footerLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com/pranavmathur36-glitch',
+    href: 'https://github.com/Pranav0331',
     icon: GitHubIcon,
   },
   {
