@@ -9,7 +9,7 @@ export default function Resume() {
         description="View and download Pranav Mathur's resume."
       />
       <section className="page-container">
-        <div className="glass-card mb-6 flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+        <div className="glass-card mb-6 flex flex-col gap-4 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div>
             <h1 className="page-title">Resume</h1>
             <p className="page-subtitle">
@@ -19,9 +19,9 @@ export default function Resume() {
           <a
             href="/resume.pdf"
             download="Pranav_Mathur_Resume.pdf"
-            className="glass-btn-primary animate-download shrink-0"
+            className="glass-btn-primary animate-download w-full sm:w-auto text-center justify-center shrink-0"
           >
-            <Download className="mr-2 h-4 w-4" aria-hidden="true" />
+            <Download className="mr-2 h-4 w-4 shrink-0" aria-hidden="true" />
             Download Resume
           </a>
         </div>

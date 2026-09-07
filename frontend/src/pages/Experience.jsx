@@ -22,8 +22,8 @@ export default function Experience() {
         title="Experience | Pranav Mathur"
         description="Internships, certifications, and learning journey of Pranav Mathur."
       />
-      <section className="page-container space-y-10">
-        <motion.div {...fadeIn} className="glass-card p-6 sm:p-8">
+      <section className="page-container space-y-8 sm:space-y-10">
+        <motion.div {...fadeIn} className="glass-card p-5 sm:p-8">
           <h1 className="page-title">Experience</h1>
           <p className="page-subtitle">
             Professional experience, certifications, and the path that shaped my development skills.
@@ -34,7 +34,7 @@ export default function Experience() {
           <h2 className="section-title mb-4">Internships</h2>
           <div className="space-y-4">
             {internships.map((job) => (
-              <article key={job.company} className="glass-card p-6">
+              <article key={job.company} className="glass-card p-5 sm:p-6">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                   <h3 className="text-lg font-medium text-themed">{job.role}</h3>
                   <span className="text-sm text-themed-subtle">{job.period}</span>
@@ -62,7 +62,7 @@ export default function Experience() {
                       href={job.certificateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-4 inline-flex items-center justify-center rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white transition hover:bg-blue-600"
+                      className="mt-4 inline-flex items-center justify-center rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white transition hover:bg-blue-600 w-full sm:w-auto"
                    >
                     View Certificate ↗
                    </a>
@@ -96,7 +96,7 @@ export default function Experience() {
           <h2 className="section-title mb-4">Learning Journey</h2>
           <div className="relative space-y-4">
             {learningJourney.map((phase, index) => (
-              <article key={phase.phase} className="glass-card relative p-5 pl-8">
+              <article key={phase.phase} className="glass-card relative p-4 pl-7 sm:p-5 sm:pl-8">
                 <span className="timeline-dot !-left-[calc(1.25rem+5px)]" aria-hidden="true" />
                 {index < learningJourney.length - 1 && (
                   <span

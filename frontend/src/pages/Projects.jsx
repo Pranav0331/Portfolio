@@ -43,13 +43,13 @@ export default function Projects() {
               placeholder="Search projects..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="glass-input max-w-md"
+              className="glass-input w-full sm:max-w-md"
               aria-label="Search projects"
             />
             <select
               value={tech}
               onChange={(e) => setTech(e.target.value)}
-              className="glass-input max-w-xs"
+              className="glass-input w-full sm:max-w-xs"
               aria-label="Filter by technology"
             >
               <option value="All">All technologies</option>
@@ -71,11 +71,11 @@ export default function Projects() {
               <SmartProjectImage
                 src={project.image}
                 alt={project.title}
-                containerClassName="h-72 w-full"
+                containerClassName="h-56 sm:h-72 w-full"
                 imageClassName="transition-transform duration-500 group-hover:scale-105"
               />
 
-              <div className="flex flex-1 flex-col p-5">
+              <div className="flex flex-1 flex-col p-4 sm:p-5">
                 <h2 className="text-lg font-semibold text-themed">{project.title}</h2>
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-themed-muted">
                   {project.description}
@@ -87,14 +87,14 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-5 flex gap-3 border-t pt-4" style={{ borderColor: 'var(--glass-border)' }}>
+                <div className="mt-5 flex flex-col xs:flex-row gap-2.5 sm:gap-3 border-t pt-4" style={{ borderColor: 'var(--glass-border)' }}>
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="glass-btn flex-1 text-themed-muted"
+                    className="glass-btn flex-1 text-center justify-center text-themed-muted"
                   >
-                    <GitHubIcon className="mr-2 h-4 w-4" />
+                    <GitHubIcon className="mr-2 h-4 w-4 shrink-0" />
                     GitHub
                   </a>
                   {project.demo && (
@@ -102,9 +102,9 @@ export default function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noreferrer"
-                      className="glass-btn-primary flex-1"
+                      className="glass-btn-primary flex-1 text-center justify-center"
                     >
-                      <ExternalLink className="mr-2 h-4 w-4" aria-hidden="true" />
+                      <ExternalLink className="mr-2 h-4 w-4 shrink-0" aria-hidden="true" />
                       Live Demo
                     </a>
                   )}

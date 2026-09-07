@@ -125,24 +125,24 @@ export default function Home() {
       <div className="relative overflow-hidden">
         <HomeBackground />
 
-        <section className="relative z-10 mx-auto max-w-6xl px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-14 lg:px-8 lg:pt-16">
+        <section className="relative z-10 mx-auto max-w-6xl px-5 pb-10 pt-6 sm:px-6 sm:pb-14 sm:pt-12 lg:px-8 lg:pt-16">
           <motion.div
             variants={container}
             initial="hidden"
             animate="show"
-            className="grid items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-10 xl:gap-16"
+            className="grid items-center gap-10 lg:grid-cols-[1.15fr_1fr] lg:gap-10 xl:gap-16"
           >
             <div>
               <motion.div variants={item}>
-                <span className="glass inline-flex items-center gap-2.5 rounded-full px-4 py-2 text-sm font-medium text-themed-muted">
-                  <span className="status-dot" aria-hidden="true" />
-                  Available for Internships &amp; Opportunities
+                <span className="glass inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium text-themed-muted sm:px-4 sm:py-2 sm:text-sm">
+                  <span className="status-dot shrink-0" aria-hidden="true" />
+                  <span>Available for Internships &amp; Opportunities</span>
                 </span>
               </motion.div>
 
               <motion.h1
                 variants={item}
-                className="mt-6 text-4xl font-bold tracking-tight text-themed sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]"
+                className="mt-5 text-3xl font-bold tracking-tight text-themed xs:text-4xl sm:mt-6 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08] break-words"
               >
                 Hi, I&apos;m{' '}
                 <span className="gradient-text">Pranav Mathur</span>
@@ -150,39 +150,39 @@ export default function Home() {
 
               <motion.p
                 variants={item}
-                className="mt-4 text-lg font-medium text-themed-muted sm:text-xl"
+                className="mt-3 text-base font-medium text-themed-muted sm:mt-4 sm:text-xl break-words"
               >
                 Software Engineering Student | Web Developer | DSA Enthusiast
               </motion.p>
 
               <motion.p
                 variants={item}
-                className="mt-6 max-w-xl text-base leading-relaxed text-themed-muted sm:text-lg"
+                className="mt-4 max-w-xl text-sm leading-relaxed text-themed-muted sm:mt-6 sm:text-lg"
               >
                 Passionate about building modern web applications and solving complex
                 problems through clean code and scalable solutions. Currently focused on
                 Full Stack Development and Data Structures &amp; Algorithms.
               </motion.p>
 
-              <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
+              <motion.div variants={item} className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
                 <Link
                   to="/projects"
-                  className="glass-btn-primary group"
+                  className="glass-btn-primary group w-full sm:w-auto justify-center"
                 >
-                  <FolderKanban className="mr-2 h-4 w-4" aria-hidden="true" />
+                  <FolderKanban className="mr-2 h-4 w-4 shrink-0" aria-hidden="true" />
                   View Projects
                 </Link>
                 <a
                   href="/resume.pdf"
                   download="Pranav_Mathur_Resume.pdf"
-                  className="glass-btn text-themed-muted"
+                  className="glass-btn text-themed-muted w-full sm:w-auto justify-center"
                 >
-                  <Download className="mr-2 h-4 w-4" aria-hidden="true" />
+                  <Download className="mr-2 h-4 w-4 shrink-0" aria-hidden="true" />
                   Download Resume
                 </a>
               </motion.div>
 
-              <motion.div variants={item} className="mt-6 flex flex-wrap gap-2.5">
+              <motion.div variants={item} className="mt-6 flex flex-wrap items-center gap-3">
                 {socialLinks.map(({ label, href, icon: Icon }) => (
                   <a
                     key={label}
@@ -197,19 +197,20 @@ export default function Home() {
                 ))}
               </motion.div>
 
+              {/* Stats / Metrics: Single column on mobile, responsive multi-column on tablet/desktop */}
               <motion.div
                 variants={item}
-                className="mt-8 grid grid-cols-2 gap-2.5 sm:grid-cols-4 sm:gap-3"
+                className="mt-8 grid grid-cols-1 gap-2.5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:gap-3"
               >
                 {stats.map((stat) => (
                   <div
                     key={stat.label}
-                    className="glass-card px-3 py-3.5 text-center"
+                    className="glass-card flex items-center justify-between px-4 py-3 sm:flex-col sm:justify-center sm:px-3 sm:py-3.5 sm:text-center"
                   >
-                    <p className="text-xl font-bold gradient-text sm:text-2xl">
+                    <p className="text-lg font-bold gradient-text sm:text-2xl">
                       {stat.value}
                     </p>
-                    <p className="mt-0.5 text-[11px] font-medium leading-tight text-themed-subtle sm:text-xs">
+                    <p className="text-xs font-medium text-themed-subtle sm:mt-0.5 sm:text-[11px] sm:leading-tight">
                       {stat.label}
                     </p>
                   </div>
@@ -218,7 +219,7 @@ export default function Home() {
             </div>
 
             <motion.div variants={item} className="flex justify-center lg:justify-end lg:-translate-y-16">
-              <div className="relative animate-float">
+              <div className="relative animate-float max-w-full">
                 <div
                   className="absolute inset-0 -z-10 scale-110 animate-glow-pulse rounded-full bg-gradient-to-br from-blue-700 via-blue-600 to-slate-800 blur-3xl"
                   aria-hidden="true"
@@ -228,19 +229,15 @@ export default function Home() {
                   <img
                     src="/profile.jpeg"
                     alt="Pranav Mathur"
-         
-                  className="h-80 w-80 md:h-96 md:w-96 lg:h-[380px] lg:w-[380px] rounded-full object-cover object-[center_10%]"
-                    
-                     
+                    className="h-56 w-56 xs:h-64 xs:w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 lg:h-[380px] lg:w-[380px] max-w-full rounded-full object-cover object-[center_10%]"
                   />
-
                 </div>
               </div>
             </motion.div>
           </motion.div>
         </section>
 
-        <section className="relative z-10 mx-auto max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24 lg:px-8 lg:pb-28">
+        <section className="relative z-10 mx-auto max-w-6xl px-5 pb-20 sm:px-6 sm:pb-24 lg:px-8 lg:pb-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

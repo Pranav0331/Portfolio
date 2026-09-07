@@ -69,6 +69,8 @@
 
   html {
     @apply scroll-smooth;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
@@ -77,16 +79,18 @@
     @apply antialiased;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+    width: 100%;
   }
 }
 
 @layer components {
   .page-container {
-    @apply relative z-10 mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20;
+    @apply relative z-10 mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-20;
   }
 
   .page-container-hero {
-    @apply relative z-10 mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:px-8 lg:pb-24 lg:pt-16;
+    @apply relative z-10 mx-auto max-w-6xl px-5 pb-12 pt-8 sm:px-6 sm:pb-20 sm:pt-14 lg:px-8 lg:pb-24 lg:pt-16;
   }
 
   .text-themed {

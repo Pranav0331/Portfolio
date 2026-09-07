@@ -88,7 +88,7 @@ export default function Hackathons() {
             </p>
 
             {/* Compact Metrics Bar */}
-            <div className="mt-5 grid grid-cols-3 gap-2.5 max-w-xl">
+            <div className="mt-5 grid grid-cols-1 xs:grid-cols-3 sm:grid-cols-3 gap-2.5 max-w-xl">
               <div className="glass-panel p-2.5 rounded-xl flex items-center gap-2.5">
                 <div className="p-1.5 rounded-lg bg-blue-500/10 text-blue-500 shrink-0">
                   <Trophy className="h-4 w-4" />
@@ -104,7 +104,7 @@ export default function Hackathons() {
                   <Award className="h-4 w-4" />
                 </div>
                 <div>
-                  <div className="text-base font-bold text-themed">2st Place</div>
+                  <div className="text-base font-bold text-themed">2nd Place</div>
                   <div className="text-[10px] text-themed-subtle">Cognitive Chaos</div>
                 </div>
               </div>

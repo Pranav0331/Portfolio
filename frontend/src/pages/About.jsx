@@ -17,17 +17,17 @@ export default function About() {
         title="About | Pranav Mathur"
         description="Learn about Pranav Mathur's education, skills, achievements, and career goals."
       />
-      <section className="page-container space-y-10">
-        <motion.div {...fadeIn} className="glass-card p-6 sm:p-8">
+      <section className="page-container space-y-8 sm:space-y-10">
+        <motion.div {...fadeIn} className="glass-card p-5 sm:p-8">
           <h1 className="page-title">About Me</h1>
-          <p className="page-subtitle mt-4 max-w-3xl">
+          <p className="page-subtitle mt-3 max-w-3xl sm:mt-4">
             Software Engineering student passionate about Full-Stack Development, problem-solving, and building modern web applications. Experienced with React, Node.js, MongoDB, and JavaScript, with a strong foundation in Data Structures & Algorithms. Currently seeking opportunities to apply technical skills and contribute to impactful software products.
           </p>
         </motion.div>
 
         <motion.div {...fadeIn}>
           <h2 className="section-title mb-4">Education</h2>
-          <article className="glass-card p-6">
+          <article className="glass-card p-5 sm:p-6">
             <h3 className="text-lg font-medium text-themed">{education.degree}</h3>
             <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">{education.institution}</p>
             <p className="mt-1 text-sm text-themed-subtle">{education.period}</p>
@@ -39,7 +39,7 @@ export default function About() {
 
         <motion.div {...fadeIn}>
           <h2 className="section-title mb-4">Skills</h2>
-          <div className="glass-card p-6">
+          <div className="glass-card p-5 sm:p-6">
             <div className="flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <span key={skill} className="glass-badge">
@@ -52,7 +52,7 @@ export default function About() {
 
         <motion.div {...fadeIn}>
           <h2 className="section-title mb-4">Achievements</h2>
-          <ul className="glass-card space-y-3 p-6">
+          <ul className="glass-card space-y-3 p-5 sm:p-6">
             {achievements.map((item) => (
               <li
                 key={item}
@@ -67,7 +67,7 @@ export default function About() {
 
         <motion.div {...fadeIn}>
           <h2 className="section-title mb-4">Career Goals</h2>
-          <div className="glass-card p-6">
+          <div className="glass-card p-5 sm:p-6">
             <p className="max-w-3xl leading-relaxed text-themed-muted">
               {careerGoals}
             </p>
@@ -76,12 +76,11 @@ export default function About() {
 
         <motion.div {...fadeIn}>
           <h2 className="section-title mb-4">Timeline</h2>
-          <div className="glass-card p-6">
-            <div className="relative space-y-8 pl-6">
+          <div className="glass-card p-5 sm:p-6">
+            <div className="relative space-y-8 pl-4 sm:pl-6">
               <div className="timeline-line" aria-hidden="true" />
               {timeline.map((item) => (
-                <div key={item.year} className="relative pl-6">
-                {/* <div key={item.year} className="relative"> */}
+                <div key={item.year} className="relative pl-5 sm:pl-6">
                   <span className="timeline-dot" aria-hidden="true" />
                   <p className="text-sm font-medium text-blue-400">{item.year}</p>
                   <h3 className="mt-1 font-medium text-themed">{item.title}</h3>

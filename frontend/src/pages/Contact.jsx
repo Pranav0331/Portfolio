@@ -95,7 +95,7 @@ export default function Contact() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
-            <form onSubmit={handleSubmit} className="glass-card space-y-5 p-6 sm:p-8" noValidate>
+            <form onSubmit={handleSubmit} className="glass-card space-y-5 p-5 sm:p-8" noValidate>
               <div>
                 <label htmlFor="name" className="mb-1.5 block text-sm font-medium text-themed-muted">
                   Name
@@ -145,7 +145,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="glass-btn-primary disabled:opacity-60"
+                className="glass-btn-primary w-full sm:w-auto text-center justify-center py-2.5 px-6 disabled:opacity-60"
               >
                 {loading && <LoadingSpinner size="sm" />}
                 Send Message
@@ -158,7 +158,7 @@ export default function Contact() {
                 <div className="mt-4 space-y-3">
                   <div className="flex items-center gap-3 text-sm text-themed-muted">
                     <Mail className="h-4 w-4 shrink-0 text-blue-500 dark:text-blue-400" />
-                    <span>pranavmathur31@gmail.com</span>
+                    <span className="break-all">pranavmathur31@gmail.com</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-themed-muted">
                     <MapPin className="h-4 w-4 shrink-0 text-blue-500 dark:text-blue-400" />
@@ -169,7 +169,7 @@ export default function Contact() {
 
               <div className="glass-card p-5">
                 <h2 className="text-sm font-semibold text-themed">Social</h2>
-                <div className="mt-4 flex flex-wrap gap-2.5">
+                <div className="mt-4 flex flex-wrap items-center gap-3">
                   {socialLinks.map(({ label, href, icon: Icon }) => (
                     <a
                       key={label}
